@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/listGyro"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="40dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginVertical="20dp"
+                android:textStyle="bold"
+                android:text="DEEP INS"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:textSize="20dp"
+                android:paddingHorizontal="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:text="수집주기:"/>
+            <Button
+                android:id="@+id/btnOne"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:padding="0dp"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/white"
+                android:layout_marginHorizontal="5dp"
+                android:text="10"/>
+            <Button
+                android:id="@+id/btnTwo"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:padding="0dp"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/white"
+                android:layout_marginHorizontal="5dp"
+                android:text="100"/>
+            <Button
+                android:id="@+id/btnThree"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:padding="0dp"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/white"
+                android:layout_marginHorizontal="5dp"
+                android:text="1000"/>
+
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="500dp">
+            <LinearLayout
+                android:id="@+id/records"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
